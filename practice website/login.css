@@ -1,0 +1,144 @@
+body{
+    padding: 0%;
+    margin: 0%;
+   }
+nav{
+    display: grid;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-areas: "logo . . . . nav nav";
+    background-color: #1d343d;
+   
+}
+nav>img{
+    position: fixed;
+    border-radius: 70px;
+}
+#navul {
+    position: fixed;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    color: bisque;
+    grid-area: nav ;
+    text-align: justify;
+}
+#navul>li{
+    display: inline;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    color:#fbf4e4
+}
+a{
+    text-decoration: none;
+    color: #bcb4ac;
+    
+}
+a:visited{
+    text-decoration: none;
+    color: #fbf4e4;
+}
+#footerw{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    background-color: #1d343d;
+    padding: 30px 90px 30px;
+}
+#footerw>div{
+    margin: 20px;
+}
+#footerw h2{
+    color:#fbf4e4;
+    text-decoration: underline;
+    
+}
+#footerw ul{
+ text-decoration: none;
+ color: #bcb4ac;
+ list-style: none;
+}
+
+#footerw ul>li{
+    padding: 5px;
+    
+}
+#shop>ul , #contact>ul{
+    padding: 0px;
+}
+#contact>ul i{
+    padding-right: 15px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: ". login .";
+    
+}
+#loginspace{
+   
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    grid-area: login;
+    box-shadow: 10px 10px 20px #1d343d;
+    margin: 30px;
+    /* padding: 20px; */
+    margin-top: 90px;
+    display: flex;
+}
+#lefte{
+    display: flex;
+    width: 35%;
+    background-color: #1d343d;
+    border-radius: 50px 0px 0px 50px;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: center;
+    color: #fbf4e4;
+}
+#righte{
+    display: flex;
+    width: 60%;
+    background-color: #fbf4e4;
+    border-radius: 00px 50px 50px 0px;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: center;
+    color: #fbf4e4;
+}
+form{
+    text-align: center;
+    
+}
+form>input{
+    padding: 5px;
+    margin: 10px;
+    width: 190px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #1d343d;
+    color: #1d343d;
+}
+form label{
+    color: #1d343d;
+}
+form>input[type="submit"]{
+    background-color: #1d343d;
+    border-radius: 5px;
+    width: 60px;
+    color: #fbf4e4;
+}
+form>input:hover{
+    border: 2px dotted #1d343d;
+}
+form>input:focus{
+    text-decoration: none;
+    border: 5px solid green;
+}
+form>input[type="submit"]:hover{
+    box-shadow: 10px 10px 20px #1d343d;
+}

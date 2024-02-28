@@ -1,0 +1,515 @@
+body {
+  padding: 0%;
+  margin: 0%;
+}
+
+nav {
+  display: grid;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas: "logo . . . .  nav .";
+  background-color: #1d343d;
+}
+nav > img {
+  position: fixed;
+  border-radius: 70px;
+}
+#navul{
+  position: fixed;
+  /* display: none; */
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  color: bisque;
+  grid-area: nav;
+  text-align: justify;
+}
+#navul > li  {
+  display: inline;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  color: #fbf4e4;
+}
+#navul>li:not(#burger){
+  display: none;
+}
+#burger{
+  position: fixed;
+  color: #fbf4e4;
+  top: -5px;
+  text-align: center;
+  }
+#burger>i{
+  font-size: 30px;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #bcb4ac;
+}
+a:visited {
+  text-decoration: none;
+  color: #fbf4e4;
+}
+#footerw {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  background-color: #1d343d;
+  /* padding: 30px 90px 30px; */
+  box-sizing: border-box;
+}
+#footerw > div {
+  margin: 20px;
+}
+#footerw h2 {
+  color: #fbf4e4;
+  text-decoration: underline;
+}
+#footerw ul {
+  text-decoration: none;
+  color: #bcb4ac;
+  list-style: none;
+  padding-left: 0;
+}
+
+#footerw ul > li {
+  padding: 5px;
+}
+#shop > ul,
+
+#contact > ul {
+  padding: 0px;
+  margin-left: 0px;
+}
+#contact > ul i {
+  padding-right: 15px;
+  
+}
+
+#loginspace {
+  background-color: #fbf4e4;
+  width: 90%;
+  height: 90%;
+  border-radius: 50px;
+  box-shadow: 10px 10px 20px #1d343d;
+  margin: 30px;
+  /* padding: 20px; */
+  margin-top: 90px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+form {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "head head head head head head"
+    "who who . broker broker broker"
+    "fn fn fn ln ln ln"
+    "em em em ph ph ph"
+    "add add add add add add"
+    "city city city pc pc pc"
+    ". . pr pr . ."
+    "com com com ind ind ind"
+    ". . sub sub . .";
+
+  width: 100% !important;
+  color: #1d343d;
+  font-size: 20px;
+}
+
+sup {
+  color: red;
+}
+#topL {
+  grid-area: head;
+  text-align: center;
+  padding: 10px;
+  background-color: #1d343d;
+  border-radius: 50px 50px 0 0;
+  height: 80px;
+  color: #bcb4ac;
+}
+#title {
+  grid-area: who;
+  text-align: center;
+  /* padding-top: 20px; */
+}
+#are {
+  grid-area: broker;
+  margin: 10px;
+  margin-left: 15px ;
+  margin-right: 5px;
+  line-height: 30px;
+  /* text-align: center; */
+}
+#fname {
+  grid-area: fn;
+  /* text-align: center; */
+  margin: 10px;
+  margin-left: 25px;
+  margin-right:25px;
+}
+#lname {
+  grid-area: ln;
+  /* text-align: center; */
+  margin: 10px;
+  margin-left: 25px;
+  margin-right:25px;
+}
+select{
+    width: 100%;
+    height: 30px;
+    background-color: #1d343d;
+    color: #fbf4e4;
+    margin: 10px;
+    margin-left: 25px;
+    margin-left: 25px;
+}
+#fname > input,
+#lname > input,
+#comp > input,
+#ind > input,
+#email > input,
+#ph > input,
+#add > input,
+#city > input,
+#prt > input,
+#pc > input {
+  width: 100%;
+  height: 30px;
+  background-color: #1d343d;
+  color: #fbf4e4;
+}
+#email {
+  grid-area: em;
+  margin: 10px;
+  margin-left: 25px;
+  margin-right:25px;
+}
+#ph {
+  grid-area: ph;
+  margin: 10px;
+  margin-left: 25px;
+  margin-right:25px;
+}
+#add {
+  grid-area: add;
+  margin: 10px;
+  margin-left: 25px;
+  margin-right:25px;
+}
+#city {
+  grid-area: city;
+  margin: 10px;
+  margin-left: 25px;
+  margin-right:25px;
+}
+#prt {
+  grid-area: pr;
+  margin: 10px;
+  /* margin-left: 25px;
+  margin-right:25px; */
+}
+#pc {
+  grid-area: pc;
+  margin: 10px;
+  margin-left: 25px;
+  margin-right:25px;
+}
+#comp {
+  grid-area: com;
+  margin: 10px;
+  margin-left: 25px;
+  margin-right:25px;
+}
+#ind {
+  grid-area: ind;
+  margin: 10px;
+  margin-left: 25px;
+  margin-right:25px;
+}
+#sub {
+  grid-area: sub;
+  /* margin-bottom: 20px; */
+  width: 80%;
+}
+form>input[type="submit"]{
+    background-color: #1d343d;
+    border-radius: 5px;
+    color: #fbf4e4;
+    margin: 25px;
+    height: 60%;
+}
+form>div>input:hover{
+    border: 2px dotted #1d343d;
+}
+form>div>input{
+    /* padding: 5px;
+    margin: 10px;
+    width: 190px; */
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid #1d343d;
+    color: #1d343d;
+}
+form>div>input:focus{
+    text-decoration: none;
+    border: 5px solid #fbf4e4;
+}
+form>input[type="submit"]:hover{
+    box-shadow: 10px 10px 20px #1d343d;
+}
+
+/* this is for mobile */
+@media screen and (min-width:900px){
+  nav {
+    display: grid;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: "logo . . . . nav nav";
+    background-color: #1d343d;
+  }
+  nav > img {
+    position: fixed;
+    border-radius: 70px;
+  }
+  #navul {
+    position: fixed;
+    display: inline-block !important;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    color: bisque;
+    padding: 10px;
+    margin: 10px;
+    color: #fbf4e4;
+  }
+  #navul>#burger{
+    display: none;
+  }
+  #navul>li:not(#burger) {
+    display: inline;
+}
+  a {
+    text-decoration: none;
+    color: #bcb4ac;
+  }
+  a:visited {
+    text-decoration: none;
+    color: #fbf4e4;
+  }
+  #footerw {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    background-color: #1d343d;
+    padding: 30px 90px 30px;
+
+  }
+  #footerw > div {
+    margin: 20px;
+  }
+  #footerw h2 {
+    color: #fbf4e4;
+    text-decoration: underline;
+  }
+  #footerw ul {
+    text-decoration: none;
+    color: #bcb4ac;
+    list-style: none;
+    font-size: 15px;
+  }
+
+  #footerw ul > li {
+    padding: 5px;
+  }
+  #shop > ul,
+  #contact > ul {
+    padding: 0px;
+  }
+  #contact > ul i {
+    padding-right: 15px;
+  }
+
+  #loginspace {
+    background-color: #fbf4e4;
+    width: 900px;
+    height: 800px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 20px #1d343d;
+    margin: 30px;
+    /* padding: 20px; */
+    margin-top: 90px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "head head head head head head"
+      "who who . broker broker broker"
+      "fn fn fn ln ln ln"
+      "em em em ph ph ph"
+      "add add add add add add"
+      "city city pr pr pc pc"
+      "com com com ind ind ind"
+      ". . sub sub . .";
+
+    width: 100%;
+    color: #1d343d;
+    font-size: 25px;
+  }
+
+  sup {
+    color: red;
+  }
+  #topL {
+    grid-area: head;
+    text-align: center;
+    padding: 10px;
+    background-color: #1d343d;
+    border-radius: 50px 50px 0 0;
+    height: 80px;
+    color: #bcb4ac;
+  }
+  #title {
+    grid-area: who;
+    text-align: center;
+    /* padding-top: 20px; */
+  }
+  #are {
+    grid-area: broker;
+    margin: 10px;
+    margin-left: 15px ;
+    margin-right: 5px;
+    line-height: 30px;
+    /* text-align: center; */
+  }
+  #fname {
+    grid-area: fn;
+    /* text-align: center; */
+    margin: 10px;
+    margin-left: 25px;
+    margin-right:25px;
+  }
+  #lname {
+    grid-area: ln;
+    /* text-align: center; */
+    margin: 10px;
+    margin-left: 25px;
+    margin-right:25px;
+  }
+  select{
+      width: 100%;
+      height: 30px;
+      background-color: #1d343d;
+      color: #fbf4e4;
+      margin: 10px;
+      margin-left: 25px;
+      margin-left: 25px;
+  }
+  #fname > input,
+  #lname > input,
+  #comp > input,
+  #ind > input,
+  #email > input,
+  #ph > input,
+  #add > input,
+  #city > input,
+  #prt > input,
+  #pc > input {
+    width: 100%;
+    height: 30px;
+    background-color: #1d343d;
+    color: #fbf4e4;
+  }
+  #email {
+    grid-area: em;
+    margin: 10px;
+    margin-left: 25px;
+    margin-right:25px;
+  }
+  #ph {
+    grid-area: ph;
+    margin: 10px;
+    margin-left: 25px;
+    margin-right:25px;
+  }
+  #add {
+    grid-area: add;
+    margin: 10px;
+    margin-left: 25px;
+    margin-right:25px;
+  }
+  #city {
+    grid-area: city;
+    margin: 10px;
+    margin-left: 25px;
+    margin-right:25px;
+  }
+  #prt {
+    grid-area: pr;
+    margin: 10px;
+    /* margin-left: 25px;
+    margin-right:25px; */
+  }
+  #pc {
+    grid-area: pc;
+    margin: 10px;
+    margin-left: 25px;
+    margin-right:25px;
+  }
+  #comp {
+    grid-area: com;
+    margin: 10px;
+    margin-left: 25px;
+    margin-right:25px;
+  }
+  #ind {
+    grid-area: ind;
+    margin: 10px;
+    margin-left: 25px;
+    margin-right:25px;
+  }
+  #sub {
+    grid-area: sub;
+    margin-bottom: 20px;
+    width: 250px;
+  }
+  form>input[type="submit"]{
+      background-color: #1d343d;
+      border-radius: 5px;
+      color: #fbf4e4;
+      margin: 25px;
+      height: 60px;
+  }
+  form>div>input:hover{
+      border: 2px dotted #1d343d;
+  }
+  form>div>input{
+      /* padding: 5px;
+      margin: 10px;
+      width: 190px; */
+      border-radius: 5px;
+      text-align: center;
+      border: 2px solid #1d343d;
+      color: #1d343d;
+  }
+  form>div>input:focus{
+      text-decoration: none;
+      border: 5px solid #fbf4e4;
+  }
+  form>input[type="submit"]:hover{
+      box-shadow: 10px 10px 20px #1d343d;
+  }
+}
